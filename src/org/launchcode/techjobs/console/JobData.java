@@ -8,7 +8,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.io.Reader;
 import java.util.*;
-
+import java.util.Collections;
 /**
  * Created by LaunchCode
  */
@@ -48,8 +48,9 @@ public class JobData {
 
         // load data, if not already loaded
         loadData();
-
-        return allJobs;
+        ArrayList<HashMap<String, String>> allJobDataCopy = new ArrayList<>();
+        allJobDataCopy = allJobs;
+        return allJobDataCopy;
     }
 
     /**
